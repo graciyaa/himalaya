@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smaller Cat Face</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cat {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background: #b0b0b0;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #888888;
+    }
+
+    .ear {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 28px solid #b0b0b0;
+      top: -18px;
+      z-index: -1;
+    }
+
+    .ear.left {
+      left: -6px;
+      transform: rotate(-15deg);
+    }
+
+    .ear.right {
+      right: -6px;
+      transform: rotate(15deg);
+    }
+
+    .eye {
+      position: absolute;
+      top: 40px;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1.5px solid #333;
+    }
+
+    .eye.left {
+      left: 28px;
+    }
+
+    .eye.right {
+      right: 28px;
+    }
+
+    .pupil {
+      width: 5px;
+      height: 5px;
+      background: black;
+      border-radius: 50%;
+      margin: 4.5px auto;
+    }
+
+    .nose {
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 8px solid #ff7a7a;
+      transform: translateX(-50%);
+    }
+
+    .mouth {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      width: 14px;
+      height: 8px;
+      border-bottom: 2px solid #333;
+      border-radius: 0 0 50% 50%;
+      transform: translateX(-50%);
+    }
+
+    .whiskers {
+      position: absolute;
+      top: 68px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .whisker-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .whisker {
+      width: 25px;
+      height: 1.5px;
+      background: #333;
+    }
+
+    .left .whisker:nth-child(1) { transform: rotate(10deg); }
+    .left .whisker:nth-child(2) { transform: rotate(0deg); }
+    .left .whisker:nth-child(3) { transform: rotate(-10deg); }
+
+    .right .whisker:nth-child(1) { transform: rotate(-10deg); }
+    .right .whisker:nth-child(2) { transform: rotate(0deg); }
+    .right .whisker:nth-child(3) { transform: rotate(10deg); }
+  </style>
+</head>
+<body>
+  <div class="cat">
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+
+    <div class="eye left"><div class="pupil"></div></div>
+    <div class="eye right"><div class="pupil"></div></div>
+
+    <div class="nose"></div>
+    <div class="whiskers">
+      <div class="whisker-group left">
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+      </div>
+      <div class="whisker-group right">
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+      </div>
+    </div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>

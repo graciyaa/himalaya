@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Sunflower 🌻</title>
+  <style>
+    body {
+      background: #87CEEB; /* Sky blue */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .sunflower {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      animation: spin 10s linear infinite;
+    }
+
+    .petal {
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      background: yellow;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform-origin: left center;
+    }
+
+    /* Create 16 petals in a circle */
+    .sunflower .petal:nth-child(1) { transform: rotate(0deg) translateX(-100px); }
+    .sunflower .petal:nth-child(2) { transform: rotate(22.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(3) { transform: rotate(45deg) translateX(-100px); }
+    .sunflower .petal:nth-child(4) { transform: rotate(67.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(5) { transform: rotate(90deg) translateX(-100px); }
+    .sunflower .petal:nth-child(6) { transform: rotate(112.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(7) { transform: rotate(135deg) translateX(-100px); }
+    .sunflower .petal:nth-child(8) { transform: rotate(157.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(9) { transform: rotate(180deg) translateX(-100px); }
+    .sunflower .petal:nth-child(10) { transform: rotate(202.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(11) { transform: rotate(225deg) translateX(-100px); }
+    .sunflower .petal:nth-child(12) { transform: rotate(247.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(13) { transform: rotate(270deg) translateX(-100px); }
+    .sunflower .petal:nth-child(14) { transform: rotate(292.5deg) translateX(-100px); }
+    .sunflower .petal:nth-child(15) { transform: rotate(315deg) translateX(-100px); }
+    .sunflower .petal:nth-child(16) { transform: rotate(337.5deg) translateX(-100px); }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      background: brown;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: inset 0 0 10px #000;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="sunflower">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+  </div>
+</body>
+</html>

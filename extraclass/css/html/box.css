@@ -1,0 +1,32 @@
+div {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+  display: inline;
+  border:3px solid black  ;
+}
+#box1{
+    position: static;
+    background-color: brown;
+    height: 200px;
+
+}
+#box2{
+    position: relative;
+    background-color: aquamarine;
+    top: 30px;
+}
+#box3{
+    position: relative;
+    background-color: bisque;
+    z-index: 2px;
+}
+#head{
+    background: fixed blanchedalmond;
+    border: solid salmon;
+}
+p{
+    text-align: right;
+text-size-adjust: 2px;
+}

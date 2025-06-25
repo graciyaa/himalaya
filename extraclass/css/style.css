@@ -1,0 +1,32 @@
+h1 {
+  color: #ebe1e1;
+  background-color: rgb(190, 26, 108);
+  border: 2px solid #5f535b;
+}
+
+#headings {
+  background-color: #5f535b;
+  border: 2px solid #5f535b;
+  background-image: url("https://www.floraly.com.au/cdn/shop/articles/iris_blog_hero.png?v=1666934661&width=700");
+  background-size: 100%;
+}
+body {
+  background-color: beige;
+  background-image: url("/extraclass/images/X-037.jpg");
+  background-position: right bottom;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.head {
+  color: rgb(66, 42, 5);
+  background-color: rgb(139, 139, 78);
+  border: 2px solid #5f535b;
+}
+p {
+  color: #260f5c;
+  background-color: rgb(122, 153, 103);
+  border: 2px solid #5f535b;
+  margin: inherit;
+}

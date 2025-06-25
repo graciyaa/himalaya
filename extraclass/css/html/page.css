@@ -1,0 +1,59 @@
+h1 {
+  color: #ebe1e1;
+  background-color: rgb(190, 26, 108);
+  border: 2px solid #5f535b;
+}
+#headings {
+  border: 18px solid #53454f;
+  background-image: url("https://media.istockphoto.com/id/1066588820/photo/lavender-field-at-sunset-provence-amazing-landscape-with-fiery-sky-france.jpg?s=612x612&w=0&k=20&c=7WjuB6ODzfUxrpWTL1mS2vTmsFCtMdbE2H9X4QA-XkI=");
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #5f535b;
+  border-radius: 50px;
+  background-color: #ebe1e1;
+  margin: 10px;
+  border: double;
+  border-width: 5px;
+  padding: 15px;
+}
+
+h1 {
+  color: #ebe1e1;
+  background-color: rgb(190, 26, 108);
+  border: 2px solid #5f535b;
+  text-align: center;
+  text-decoration: underline dotted rgb(32, 11, 11);
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px #1a1212;
+  font-weight: bold;
+  font-size: 60px;
+}
+div {
+  border: dotted;
+  border-width: 10px;
+  border-color: rgb(35, 3, 85);
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+body {
+  background-color: rgb(158, 147, 153);
+}
+#head {
+  border: 18px solid rgb(104, 41, 83);
+  background-image: url("https://www.floraly.com.au/cdn/shop/articles/iris_blog_hero_1200x1200_crop_center.png?v=1666934661");
+  background-size: cover;
+  background-position: auto;
+}
+p {
+  text-align-last: right;
+  font-style: italic;
+  font-variant: small-caps;
+}

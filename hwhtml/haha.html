@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sunflower Illustration</title>
+  <style>
+    body {
+      background: #f5f4e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .sunflower {
+      position: relative;
+      width: 200px;
+      height: 250px;
+    }
+    .center {
+      position: absolute;
+      top: 60px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background: #6b3e26;
+      border-radius: 50%;
+      z-index: 2;
+      box-shadow: 0 4px 20px #c1a97b inset;
+    }
+    .petal {
+      position: absolute;
+      width: 60px;
+      height: 30px;
+      background: #ffe066;
+      border-radius: 60px 60px 0 0;
+      top: 15px;
+      left: 70px;
+      transform-origin: 50% 100%;
+    }
+    /* 12 petals, rotated evenly */
+    .petal1  { transform: rotate(0deg); }
+    .petal2  { transform: rotate(30deg);}
+    .petal3  { transform: rotate(60deg);}
+    .petal4  { transform: rotate(90deg);}
+    .petal5  { transform: rotate(120deg);}
+    .petal6  { transform: rotate(150deg);}
+    .petal7  { transform: rotate(180deg);}
+    .petal8  { transform: rotate(210deg);}
+    .petal9  { transform: rotate(240deg);}
+    .petal10 { transform: rotate(270deg);}
+    .petal11 { transform: rotate(300deg);}
+    .petal12 { transform: rotate(330deg);}
+    .stem {
+      position: absolute;
+      top: 140px;
+      left: 120px;
+      width: 14px;
+      height: 110px;
+      background: #62a23b;
+      border-radius: 0 0 18px 18px;
+      z-index: 0;
+    }
+    .leaf {
+      position: absolute;
+      width: 60px;
+      height: 30px;
+      background: #67bb43;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      z-index: 1;
+    }
+    .leaf.left {
+      top: 180px;
+      left: 65px;
+      transform: rotate(-30deg);
+    }
+    .leaf.right {
+      top: 200px;
+      left: 135px;
+      transform: rotate(30deg) scaleX(-1);
+    }
+  </style>
+</head>
+<body>
+  <div class="sunflower">
+    <div class="center"></div>
+    <div class="petal petal1"></div>
+    <div class="petal petal2"></div>
+    <div class="petal petal3"></div>
+    <div class="petal petal4"></div>
+    <div class="petal petal5"></div>
+    <div class="petal petal6"></div>
+    <div class="petal petal7"></div>
+    <div class="petal petal8"></div>
+    <div class="petal petal9"></div>
+    <div class="petal petal10"></div>
+    <div class="petal petal11"></div>
+    <div class="petal petal12"></div>
+    <div class="stem"></div>
+    <div class="leaf left"></div>
+    <div class="leaf right"></div>
+  </div>
+</body>
+</html>
